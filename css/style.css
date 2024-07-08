@@ -576,7 +576,7 @@ a {
 
 /* * Media queries * */
 /* For devices up to 992px width */
-@media screen and (max-width: 992px) {
+@media (max-width: 992px) {
   .hero-container {
     grid-template-columns: 1fr;
     justify-items: center;
@@ -657,7 +657,27 @@ a {
   }
 }
 
+.details .container-lg {
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
 
+.details .details-2-text,
+.details .details-1-text {
+  text-align: center;
+  max-width: 100px;
+}
+
+.details .details-1 {
+  text-align: center;
+  grid-template-columns: 1fr;
+}
+
+.details .details-2 {
+  text-align: center;
+  grid-template-columns: 1fr;
+
+}
 
 .grid-download {
   grid-template-columns: 1fr;
@@ -669,6 +689,16 @@ a {
   width: 500px;
 }
 
+.feedback-n .numbers {
+  grid-template-columns: 1fr;
+  gap: 2rem;
+
+  .number {
+    text-align: center;
+  }
+
+
+}
 
 .screenshots .screenshots-grid {
   display: grid;
@@ -697,11 +727,11 @@ a {
 
 
 /* For devices up to 768px width */
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .main-menu {
     display: none;
   }
-  
+
   .mobile-menu {
     display: block;
   }
@@ -709,7 +739,7 @@ a {
   .mobile-menu .mobile-menu-toggle {
     display: block;
   }
-  
+
   .team-container {
     grid-template-columns: 1fr;
   }
@@ -721,42 +751,13 @@ a {
 }
 
 /* For devices up to 500px width */
-@media screen and (max-width: 500px) {
+@media (max-width: 500px) {
   .team-container {
     grid-template-columns: 1fr;
   }
 
   .card:last-child {
     grid-column: span 1;
-  }
-  .details .container-lg {
-    grid-template-columns: 1fr;
-    gap: 2rem;
-  }
-  
-  .details .details-2-text,
-  .details .details-1-text {
-    text-align: center;
-    max-width: 100px;
-  }
-  
-  .details .details-1 {
-    text-align: center;
-    grid-template-columns: 1fr;
-  }
-  
-  .details .details-2 {
-    text-align: center;
-    grid-template-columns: 1fr;
-    
-  }
-  .feedback-n .numbers {
-    grid-template-columns: 1fr;
-    gap: 2rem;
-  
-    .number {
-      text-align: center;
-    }
   }
 
   .screenshots .screenshots-grid {
