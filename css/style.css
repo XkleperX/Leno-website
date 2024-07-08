@@ -576,7 +576,7 @@ a {
 
 /* * Media queries * */
 /* For devices up to 992px width */
-@media (max-width: 992px) {
+@media screen and (max-width: 992px) {
   .hero-container {
     grid-template-columns: 1fr;
     justify-items: center;
@@ -696,8 +696,6 @@ a {
   .number {
     text-align: center;
   }
-
-
 }
 
 .screenshots .screenshots-grid {
@@ -727,7 +725,7 @@ a {
 
 
 /* For devices up to 768px width */
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .main-menu {
     display: none;
   }
@@ -751,7 +749,7 @@ a {
 }
 
 /* For devices up to 500px width */
-@media (max-width: 500px) {
+@media screen and (max-width: 500px) {
   .team-container {
     grid-template-columns: 1fr;
   }
