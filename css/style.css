@@ -360,7 +360,6 @@ a {
   color: #fff;
   text-align: center;
   padding-bottom: 5rem;
-
 }
 
 .preview .video-preview {
@@ -387,6 +386,7 @@ a {
   justify-content: center;
   gap: 2rem;
   margin-bottom: 5rem;
+  text-align: left;
 }
 
 .details .details-text {
@@ -416,6 +416,7 @@ a {
   justify-content: center;
   gap: 2rem;
   padding-top: 3rem;
+  text-align: justify;
 }
 
 /* * feedback * */
@@ -502,9 +503,15 @@ a {
   gap: 2rem;
 }
 
+.grid-download .download-text {
+  max-width: 500px;
+}
+
 .download h3 {
   margin-bottom: 2rem;
-  line-height: 1.2;
+  font-size: 1.5rem;
+  line-height: 1.3;
+  font-weight: 500;
 }
 
 .download .download-btn {
@@ -641,13 +648,10 @@ a {
   }
 
   .preview .video-preview {
-    padding: 3rem;
+    padding: 1rem;
   }
 
-  .details {
-    grid-template-columns: 1fr;
-    gap: 2rem;
-  }
+
 
   .details .details-2-text,
   .details .details-1-text {
@@ -684,6 +688,11 @@ a {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
+  }
+
+  .screenshots .screenshot img {
+    width: 300px;
+    height: 550px;
   }
 
   .screenshot:nth-child(5) {
@@ -730,31 +739,99 @@ a {
 
 /* For devices up to 500px width */
 @media (max-width: 500px) {
+  .navbar {
+    padding: 0 1rem;
+  }
+
   .team-container {
     grid-template-columns: 1fr;
   }
 
+
   .card:last-child {
     grid-column: span 1;
+  }
+
+  .feature-card {
+    height: 150px;
+  }
+
+
+  .head-text {
+
+    h1 {
+      margin-bottom: 1rem;
+    }
+
+    p {
+      max-width: 600px;
+      margin: 0 auto 1rem;
+    }
+  }
+
+  .features .feature-text,
+  .head-text {
+    padding: 1.5rem;
+  }
+
+  .features .feature-img img {
+    width: 300px;
+    height: 550px;
+    padding-bottom: 3rem;
+  }
+
+  .features .feature-icon {
+    margin-bottom: 0rem;
+    padding: 0;
+  }
+
+  .details {
+    grid-template-columns: 1fr;
+  }
+
+  .details .details-img,
+  .details .details-text {
+    padding: 1.5rem;
   }
 
   .screenshots .screenshots-grid {
     grid-template-columns: 1fr;
   }
 
+  .screenshots .screenshot img {
+    width: 300px;
+    height: 550px;
+  }
+
+
   .screenshot:nth-child(5) {
     display: block;
   }
 
+
+  .download {
+    padding: 1rem;
+  }
+
   .download .grid-download {
-    max-width: 450px;
-    margin: 0 auto;
     grid-template-columns: 1fr;
     gap: 2rem;
+  }
+
+  .download .download-buttons {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+
   }
 
   .download .grid-download h3 {
     text-align: center;
     width: 100%;
+    font-size: 1.2rem;
+  }
+
+  .footer {
+    padding: 1rem;
   }
 }
